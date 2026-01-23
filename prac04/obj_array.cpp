@@ -5,7 +5,7 @@
 using namespace std;
 
 class Circle {
-    int radius;
+    mutalbe int radius; // 앞에 mutable 한정자가 있는 맴버변수 const 맴버함수에서도 수정 가능
 public:
     void setRadius(int radius) { this->radius = radius; }
     double getArea() const { return 3.14 * pow(radius, 2); }
