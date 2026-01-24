@@ -27,6 +27,7 @@ int main() {
     vector<Rect> rectArr;
     rectArr.reserve(2);
 
+    // 객체를 두 번 생성하면 번거로우니 벡터 및 emplace_back() 함수를 통해 편리하게 생성 및 초기화
     for (int i = 0; i < rectArr.capacity(); i++) {
         cout << "enter the width & height of no." << i+1 << " Rectangle -> ";
         cin >> width >> height;
