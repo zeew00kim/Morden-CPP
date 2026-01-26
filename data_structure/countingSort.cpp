@@ -29,8 +29,8 @@ int main() {
 auto countingSort(vector<int>& A) -> void {
     
     // 카운팅 배열 C의 크기 -> 입력 배열의 원소 중 가장 큰 값 - 가장 작은 값 + 1
-    vector<int>::iterator max = max_element(A.begin(), A.end());                // O(1)
-    auto min = min_element(A.begin(), A.end());                                 // O(1)
+    vector<int>::iterator max = max_element(A.begin(), A.end());                // O(n)
+    auto min = min_element(A.begin(), A.end());                                 // O(n)
     int cnt = *max - *min + 1;                                                  // O(1)
 
     // B -> C를 통해 카운팅된 원소 값을 저장하는 버킷(출력) 배열
