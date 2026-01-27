@@ -23,7 +23,7 @@ int main() {
     vector<Circle> circArr;
     circArr.reserve(10);    // 벡터에 10만큼의 빈 공간(Capacity) 생성
 
-    // 백터의 빈 공간에 emplace_back() 함수를 사용 시 벡터 내부에서 자체적으로 벡터를 생성
+    // 백터의 빈 공간에 emplace_back() 함수를 사용 시 벡터 내부에서 자체적으로 객체를 생성
     // push_back() 함수 사용 시 기존의 객체를 복사/대입하기 때문에 불필요한 임시 저장 객체를 생성/소멸해야 함
     for (int i = 0; i < 10; i++) { circArr.emplace_back(i); }
 
